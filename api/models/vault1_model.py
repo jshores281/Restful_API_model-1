@@ -22,6 +22,7 @@ class Vault1_Model(Base):
 	__tablename__ = "Vault1"
 	id = Column(Integer, primary_key=True)
 	name = Column(String(255), nullable=False)
+	email = Column(String(255), nullable=False)
 	website = Column(String(255), nullable=False)
 	password = Column(String(255), nullable=False)
 	created_on = Column(DateTime(), default=datetime.now, nullable=False)

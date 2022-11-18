@@ -10,6 +10,7 @@ from marshmallow_sqlalchemy import SQLAlchemyAutoSchema, auto_field
 class Vault1_Schema(SQLAlchemyAutoSchema):
 	id = auto_field()
 	name = auto_field()
+	email = auto_field()
 	website = auto_field()
 	password = auto_field()
 	created_on = auto_field() 
