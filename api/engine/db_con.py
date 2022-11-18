@@ -25,7 +25,7 @@ DEBUG = get_key(config, 'DEBUG')
 Base = declarative_base()
 
 
-
+# from os get operating system. if linux change forward slashs to back slashs
 if DEBUG == "True":
 	# IF DEBUG == True: DB_NAME = 'vault1_TEST' else: DB_NAME = 'vault1_prod'
 	db_engine = sqla.create_engine('{}://{}:{}@{}:{}/'.format(DRIVER,USERNAME,PASSWORD,HOST,PORT))
