@@ -20,16 +20,12 @@
 <br>
 
 ### :File system
-
 <pre>
-
-
 │   app.py
 │   middleware.py
 │   __init__.py
 │
 ├───engine
-│       config.env
 │       db_con.py
 │       _config.env
 │       __init__.py           
@@ -38,22 +34,16 @@
 │       vault1_model.py
 │       __init__.py
 │   
-│   
-│
 ├───resources
 │       vault1_resource.py
 │       __init__.py
 │   
-│   
-│
 ├───schemas
 │       vault1_schema.py
 │   
-│   
-│
 └───utils
-        test-post.py
-
+        post_data.py
+        req_data.py
 </pre>
 
 
