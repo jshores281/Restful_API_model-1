@@ -21,27 +21,34 @@
 ### :File system
 
 <pre>
+
+
 │   app.py
 │   middleware.py
 │   __init__.py
 │
-├───config
-│       config.env
-│
 ├───engine
+│       config.env
 │       db_con.py
-│       __init__.py
+│       _config.env
+│       __init__.py           
 │
 ├───models
 │       vault1_model.py
 │       __init__.py
+│   
+│   
 │
 ├───resources
 │       vault1_resource.py
 │       __init__.py
+│   
+│   
 │
 ├───schemas
 │       vault1_schema.py
+│   
+│   
 │
 └───utils
         test-post.py

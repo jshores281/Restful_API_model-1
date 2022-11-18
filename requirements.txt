@@ -1,4 +1,5 @@
 cryptography==36.0.2
+faker==15.3.2
 falcon==3.1.0
 falcon_sqla==0.3.0
 gunicorn==20.1.0
