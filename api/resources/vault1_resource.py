@@ -52,3 +52,38 @@ class Vault1_resource:
 		resp.status = falcon.HTTP_200
 		resp.content_type = falcon.MEDIA_JSON
 
+
+
+	def on_put(self, req, resp, _id):
+		# INCOMPLETE, ISSUES WITH QUERYING AND RETREIVING DATA, ID OBJECT MATCHING
+
+		obj = session.query(Vault1_Model).filter(Vault1_Model.id==_id)
+		new_data = json.load(req.bounded_stream)
+        
+		for data in obj:
+			data.update(new_data)
+
+		# deserializer
+		resp.text = json.dumps(obj)
+
+		# request code responses
+		resp.status = falcon.HTTP_200
+		resp.content_type = falcon.MEDIA_JSON		
+
+
+
+	def on_delete(self, req, resp):
+		pass
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -46,6 +46,6 @@ api.resp_options.media_handlers.update(extra_handlers)
 
 vault1_resource = Vault1_resource()
 api.add_route('/vault1', vault1_resource)
-
+api.add_route('/vault1/{_id}', vault1_resource)
 
 
