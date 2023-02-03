@@ -11,7 +11,7 @@
 ## MECH:
 - [X] - add a DB environment config file (allow different DB connectors) 
 - [X] - make DB function call reusable 
-- [ ] - make OS agnostic
+- [X] - make OS agnostic
 
 -----
 
