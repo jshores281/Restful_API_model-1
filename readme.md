@@ -1,6 +1,6 @@
 # RestFUL API model test
 
-- Restful API model will be my standardized model for how restful API backends should work moving forward.
+- Standardized model for RESTful API.
 
 - This is a test run on making a fully functioning restful api with falcon, sqlalchemy, marshmellow and mysql. 
 
@@ -11,7 +11,7 @@
 ## MECH:
 - [X] - add a DB environment config file (allow different DB connectors) 
 - [X] - make DB function call reusable 
-- [ ] - make OS agnostic
+- [X] - make OS agnostic
 
 -----
 
