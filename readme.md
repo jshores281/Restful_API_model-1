@@ -52,7 +52,11 @@
 
 
 ### :API routes
+
+
 <pre>
+> falcon-inspect-app app:api
+
 Falcon App (WSGI)
 • Routes:
     ⇒ /vault1 - Vault1_resource:
