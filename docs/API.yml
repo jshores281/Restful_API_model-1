@@ -1,0 +1,30 @@
+openapi: '3.0.2'
+info:
+  title: RESTful API Model-1
+  version: '1.0'
+
+
+servers:
+  - url: https://localhost:8000
+    description: RESTful API model used for testing
+
+
+
+components:
+  responses:
+    name:
+      description: ''
+      content:
+        application/json:
+          schema: {}
+
+
+
+paths:
+  /Vault1:
+    $ref: './paths/Vault1.yml'
+
+
+
+
+
