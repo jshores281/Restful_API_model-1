@@ -1,6 +1,4 @@
-
 # API resource endpoints allow interaction through server to DB.
-
 
 import sys
 import falcon
@@ -16,7 +14,6 @@ from engine.db_con import *
 
 # THIS ACTUALY WORKS (TIP: START SMALL THEN WORK ALL THE WAY UP)
 class Vault1_resource:
-
 	def on_get(self, req, resp):
 
 		# retreives list of all objects from DB.Vault1
@@ -28,8 +25,6 @@ class Vault1_resource:
 		# request code responses
 		resp.status = falcon.HTTP_200
 		resp.content_type = falcon.MEDIA_JSON
-
-
 
 	def on_post(self, req, resp):
 

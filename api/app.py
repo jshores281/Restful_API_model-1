@@ -1,4 +1,3 @@
-
 # Main API application.
 
 import os
@@ -11,7 +10,9 @@ import falcon_sqla
 import falcon
 from falcon import media
 
-
+from falcon_apispec import FalconPlugin
+from falcon_apispec import *
+from apispec import APISpec
 
 from resources.vault1_resource import *
 from models import *
@@ -42,6 +43,15 @@ api = falcon.API(
 	middleware=[manager.middleware])
 
 
+# GENERATE A REST API SWAGGER PAGE
+# spec = APISpec(
+#     title='Falcon vault Swagger page',
+#     version='2.0.0',
+#     openapi_version='3.0.0',
+#     plugins=[FalconPlugin(api)],
+#     )
+
+
 api.req_options.media_handlers.update(extra_handlers)
 api.resp_options.media_handlers.update(extra_handlers)
 
@@ -49,5 +59,8 @@ api.resp_options.media_handlers.update(extra_handlers)
 vault1_resource = Vault1_resource()
 api.add_route('/vault1', vault1_resource)
 api.add_route('/vault1/{_id}', vault1_resource)
+
+# api.add_route('/docs/swagger.json', FalconPlugin(spec))
+# api.add_route('/docs/', FalconPlugin(spec))
 
 

@@ -10,7 +10,7 @@ from dotenv import *
 from os import getenv
 
 
-config = find_dotenv("_config.env")
+config = find_dotenv("config.env")
 
 DRIVER = get_key(config,'DRIVER')
 USERNAME = get_key(config,'USERNAME')
