@@ -1,6 +1,6 @@
 # RestFUL API model test
 
-- Standardized model for RESTful API
+- Standardized model for RESTful API design.
 - Template design of fully functioning restful api.
   - falcon, sqlalchemy, marshmellow, mysql. 
 
