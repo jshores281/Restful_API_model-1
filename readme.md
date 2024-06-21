@@ -2,7 +2,7 @@
 
 - Standardized model for RESTful API
 - Template design of fully functioning restful api.
-        - falcon, sqlalchemy, marshmellow, mysql. 
+-         falcon, sqlalchemy, marshmellow, mysql. 
 
 - The server will be compatible with either gunicorn or waitress
 
