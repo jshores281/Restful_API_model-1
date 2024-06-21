@@ -1,8 +1,8 @@
 # RestFUL API model test
 
-- Standardized model for RESTful API.
-
-- This is a test run on making a fully functioning restful api with falcon, sqlalchemy, marshmellow and mysql. 
+- Standardized model for RESTful API
+- Template design of fully functioning restful api.
+        - falcon, sqlalchemy, marshmellow, mysql. 
 
 - The server will be compatible with either gunicorn or waitress
 
